@@ -1,0 +1,43 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+/* CSS HEX */
+--rich-black-fogra-39: #080708ff;
+--snow: #fffbfeff;
+--gray-web: rgb(251, 248, 248);
+--prussian-blue: #13315cff;
+
+/* CSS HSL */
+--rich-black-fogra-39: hsla(300, 7%, 3%, 1);
+--snow: hsla(315, 100%, 99%, 1);
+/* --gray-web: hsla(180, 1%, 48%, 1); */
+--prussian-blue: hsla(215, 66%, 22%, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--gray-web);
+
+}
