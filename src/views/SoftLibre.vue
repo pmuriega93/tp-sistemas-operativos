@@ -70,6 +70,25 @@
     </section>
 </template>
 
+<script lang="ts" setup>
+import { useGtm } from '@gtm-support/vue-gtm';
+import { onMounted } from 'vue';
+
+const gtm = useGtm();
+
+onMounted(() => {
+    gtm?.trackEvent({
+        event: 'softlibre-page-mounted',
+        category: 'pages',
+        action: 'click',
+        label: 'Mi trigger personalizado',
+        value: 1000
+    })
+})
+
+
+</script>
+
 <style lang="scss" scoped>
 .entry {
     margin: 0 auto;

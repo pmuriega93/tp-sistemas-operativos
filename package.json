@@ -2,14 +2,16 @@
   "name": "tp-linux-pmuriega",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@gtm-support/vue-gtm": "^2.0.0",
     "vue": "^3.2.41",
+    "vue-gtag": "^2.0.1",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
